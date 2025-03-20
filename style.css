@@ -1,0 +1,100 @@
+.gameScreen{
+  display: flex;
+  flex-direction: column;
+}
+.board{
+  display: grid;
+  grid-template-columns: repeat(3,200px);
+  grid-template-rows: repeat(3,200px);
+  gap: 5px;
+}
+
+.wholeBoard{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.scoreBoard{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.playerInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playerContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.playerContainer > h3, p, div{
+  margin: 0;
+}
+
+.score{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#player1Name,
+#player2Name{
+  margin-left: 10px;
+}
+
+
+.names{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.inner-board{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  widows: 200px;
+  height: 200px;
+  cursor: pointer;
+  transition: white 0.3s ease;
+
+  border: 1px solid black;
+}
+
+.inner-board:hover{
+  background-color: lightgrey;
+}
+
+#gameResultBanner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+#gameResultButton {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#gameResultButton:hover {
+  background-color: #218838;
+}

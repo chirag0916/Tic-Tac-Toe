@@ -7,7 +7,88 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+<div class="gameScreen">
+  <div class="names">
+  <div>
+    <input type="text" placeholder="Enter Player 1's Name" id="player1Input">
+    <button id="player1Button">submit</button>
+    
+  </div>
+
+  <div>
+    <button id="clearButton">Clear</button>
+    <button id="restartButton">Restart</button>
+  </div>
+
+  <div>
+    <input type="text" placeholder="Enter Player 2's Name" id="player2Input">
+    <button id="player2Button">submit</button>
+  </div>
+
+</div>
+<div class="scoreBoard">
+  <div class="playerContainer">
+    <div class="playerInfo">
+      <h2>Player 1 (X):</h2>
+      <h2 id="player1Name"></h2>
+    </div>
+    <div class="score">
+      <h3>Wins:</h3>
+      <h3 id="player1Score"></h3>
+    </div>
+  </div>
+
+  <div class="playerContainer">
+    <div class="playerInfo">
+      <h2>Player 2 (O):</h2>
+      <h2 id="player2Name"></h2>
+    </div>
+    <div class="score">
+      <h3>Wins:</h3>
+      <h3 id="player2Score"></h3>
+    </div>
+  </div>
+</div>
+
+<div class="wholeBoard">
+  <div class="board">
+    <div class="inner-board" id="board1">
+      
+    </div>
+    <div class="inner-board" id="board2">
+     
+    </div>
+    <div class="inner-board" id="board3">
+     
+    </div>
+    <div class="inner-board" id="board4">
+      
+    </div>
+    <div class="inner-board" id="board5">
+     
+    </div>
+    <div class="inner-board" id="board6">
+     
+    </div>
+    <div class="inner-board" id="board7">
+      
+    </div>
+    <div class="inner-board" id="board8">
+      
+    </div>
+    <div class="inner-board" id="board9">
+      
+    </div>
+  </div>
+
+</div>
+
+<div id="gameResultBanner" style="display: none;">
+  <h2 id="gameResultMessage"></h2>
+  <button id="gameResultButton">OK</button>
+
+</div>
+</div>
 
 
 
